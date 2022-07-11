@@ -237,6 +237,17 @@
         justify-content: center;
         text-align: center;
         border-radius: 15px;
+        animation: re-translating 0.5s ease-in-out;
+    }
+
+    @keyframes re-translating {
+        0% {
+            transform: translate(0, -20px);
+        }
+
+        100% {
+            transform: translate(0, 0px);
+        }
     }
 
     @keyframes translating {
@@ -270,7 +281,7 @@
     }
 
     #main .list-level .list-item:hover {
-        /* animation: translating 0.5s linear infinite; */
+        animation: translating 0.5s ease-in-out;
         transform: translate(0, -20px);
     }
 
